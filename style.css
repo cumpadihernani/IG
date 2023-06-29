@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container-body{
+    background-image: url(./backgorund\ passarela.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+}
+a{
+    text-decoration: none;
+    color: yellow;
+    text-transform: uppercase;
+}
+.nav-bar{
+    display: grid;
+    position: fixed;
+    height: 5rem;
+    overflow: hidden;
+    top: 0;
+    width: 100%;  
+    background-color: black;
+}
+.nav-center{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.nav-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.container {
+    border: 3px solid black;
+}
+.cell {
+    padding: 2rem;
+    background: #dedede;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid black;
+    color: #fff;
+}
+.photo{
+    margin: 5rem;
+    border-radius: 10px;
+    background-image: url(./Logo.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+}
+.container {
+    margin: 7rem;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px 400px 400px;
+    grid-gap: 2rem;
+}
+.cell-1 {
+    background-image: url(./Modelo\ 1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.cell-2 {
+    background-image: url(./Modelo\ 5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.cell-3 {
+    background-image: url(/Modelo\ 2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.cell-4 {
+    background-image: url(./Modelo\ 3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.cell-5 {
+    background-image: url(./modelo\ 6.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cell-6 {
+    background-image: url(./modelo\ 4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.footer{
+    border: 3px solid rosybrown;
+    background: rgb(21, 208, 192);
+    height: 80px;
+}
+/*IPhone 12*/
+@media screen 
+    and (min-width: 375px)
+    and (max-width: 812px)
+    {
+        .nav-links{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            align-items: center;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 2rem;
+
+        }
+        .photo{
+            visibility: hidden;
+        }
+    }
+
+
+
+
+
